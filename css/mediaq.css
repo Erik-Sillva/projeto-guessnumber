@@ -1,0 +1,9 @@
+@media screen and (min-width: 700px) {
+    .container form {
+        width: 500px;
+    }
+
+    .container .result-box {
+        width: 500px;
+    }
+}

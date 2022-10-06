@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+:root {
+    --white: #fafafa;
+    --blue: #00348a;
+    --blue-light: #0bbbd6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, html {
+    transition: all .5s ease-in-out;
+}
+
+header {
+    width: 100%;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: var(--white);
+    text-align: center;
+}
+
+header a h1 {
+    color: var(--blue);
+    font-size: 2.8em;
+    font-weight: 300;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: linear-gradient(to right, #ddd, #eee, #ddd);
+}
+
+.container form {
+    width: 80%;
+    padding: 2rem;
+    margin-top: 5%;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    background: var(--blue-light);
+}
+
+.container form label {
+    color: var(--white);
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.container form input {
+    margin: 5% 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-radius: .4em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container form input:focus {
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container form button {
+    margin-top: 3%;
+    padding: .8rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+    border-radius: .4em;
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.container form button:hover {
+    color: var(--blue);
+    background: var(--white);
+}
+
+.container .result-box {
+    width: 80%;
+    margin-top: 3%;
+    padding: 2rem;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    background: var(--white);
+    color: var(--blue);
+}
+
+.container .result-box h2 {
+    margin: 5% 0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.container .result-box span {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.container #btnRestart {
+    display: none;
+    margin-top: 3%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    transition: .2s ease-in-out;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.1);
+    background: var(--white);
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.container #btnRestart:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
